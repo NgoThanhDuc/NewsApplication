@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dms_10dp"
+        android:layout_marginRight="@dimen/dms_10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewBao"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dms_280dp"
+            android:layout_marginBottom="@dimen/dms_5dp"
+            android:background="@color/placeholder"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dms_10dp"
+            android:layout_marginBottom="@dimen/dms_10dp"
+            android:background="@color/placeholder"
+            android:gravity="center|left"
+            android:textSize="@dimen/dm_24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_10dp"
+            android:background="@color/placeholder"
+            android:gravity="center|left"
+            android:textSize="@dimen/dm_14sp" />
+
+        <TextView
+            android:id="@+id/txt_subTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_10dp"
+            android:background="@color/placeholder"
+            android:gravity="center|left"
+            android:textSize="@dimen/dm_20sp" />
+
+        <include layout="@layout/place_holder_layout"/>
+
+        <include layout="@layout/place_holder_layout"/>
+
+        <include layout="@layout/place_holder_layout"/>
+
+        <include layout="@layout/place_holder_layout"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

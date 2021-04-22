@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_tinTuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/tin_tuc"
+            android:textSize="@dimen/dm_22sp" />
+
+        <TextView
+            android:id="@+id/txt_tinDaDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:drawableLeft="@drawable/ic_history"
+            android:drawableRight="@drawable/ic_arrow_right_24"
+            android:drawablePadding="@dimen/dms_8dp"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/tin_da_doc"
+            android:textSize="@dimen/dm_20sp" />
+
+        <TextView
+            android:id="@+id/txt_tinDanhDau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:drawableLeft="@drawable/ic_save"
+            android:drawableRight="@drawable/ic_arrow_right_24"
+            android:drawablePadding="@dimen/dms_8dp"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/tin_da_luu"
+            android:textSize="@dimen/dm_20sp" />
+
+        <TextView
+            android:id="@+id/txt_giaoDien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/giao_dien"
+            android:textSize="@dimen/dm_22sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dms_10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_cheDoXem"
+                android:layout_width="@dimen/dms_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/che_do_xem"
+                android:textSize="@dimen/dm_20sp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dms_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.mahfa.dnswitch.DayNightSwitch
+                    android:id="@+id/day_night_switch"
+                    android:layout_width="@dimen/dms_80dp"
+                    android:layout_height="@dimen/dms_40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:padding="@dimen/dms_10dp"
+            android:textSize="@dimen/dm_22sp" />
+
+        <TextView
+            android:id="@+id/txt_facebookBaoThanhDuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/fb_bao_thanh_duc"
+            android:textSize="@dimen/dm_20sp" />
+
+        <TextView
+            android:id="@+id/txt_dieuKhoanSuDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/title_dieukhoan"
+            android:textSize="@dimen/dm_20sp" />
+
+        <TextView
+            android:id="@+id/txt_danhGiaUngDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/danh_gia_app"
+            android:textSize="@dimen/dm_20sp" />
+
+        <TextView
+            android:id="@+id/txt_guiMailGopY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/gui_mail_gop_y"
+            android:textSize="@dimen/dm_20sp" />
+
+        <TextView
+            android:id="@+id/txt_tienIch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_2dp"
+            android:background="@drawable/custom_selector"
+            android:clickable="true"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/tien_ich"
+            android:textSize="@dimen/dm_20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

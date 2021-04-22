@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/txt_macDinh"
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_selector"
+            android:gravity="center"
+            android:padding="@dimen/dms_8dp"
+            android:text="@string/mac_dinh"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/txt_aTru"
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_selector"
+            android:gravity="center"
+            android:padding="@dimen/dms_10dp"
+            android:text="@string/a_tru"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/txt_aCong"
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_selector"
+            android:gravity="center"
+            android:padding="@dimen/dms_8dp"
+            android:text="@string/a_cong"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dms_1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dms_10dp"
+        android:layout_marginBottom="@dimen/dms_10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_sunny_nho" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4" />
+
+        <ImageView
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_sunny_lon" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dms_1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dms_10dp"
+        android:layout_marginBottom="@dimen/dms_10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dms_15dp"
+            android:layout_weight="1.6"
+            android:gravity="center|left"
+            android:text="@string/che_do_doc_dem"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_16sp" />
+
+        <com.mahfa.dnswitch.DayNightSwitch
+            android:id="@+id/day_night_switch"
+            android:layout_width="@dimen/dms_0dp"
+            android:layout_height="@dimen/dms_30dp"
+            android:layout_marginRight="@dimen/dms_15dp"
+            android:layout_weight="0.4"
+            android:text="@string/che_do_doc_dem" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NewsHistoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNewsHistory"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="@dimen/dms_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/tin_da_doc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dms_20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dms_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_deleteAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/ic_delete" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.baoyz.swipemenulistview.SwipeMenuListView>
+
+            <TextView
+                android:id="@+id/txt_noNewsHitory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dms_10dp"
+                android:layout_marginRight="@dimen/dms_10dp"
+                android:gravity="center"
+                android:text="@string/no_news_history"
+                android:textSize="@dimen/dm_18sp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/shimmer_view_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/place_holder_layout" />
+
+                <include layout="@layout/place_holder_layout" />
+
+                <include layout="@layout/place_holder_layout" />
+
+                <include layout="@layout/place_holder_layout" />
+            </LinearLayout>
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

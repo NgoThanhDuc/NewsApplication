@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dms_15dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcec99">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageGif"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dms_350dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/giff" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageGif"
+            android:layout_marginLeft="@dimen/dms_10dp"
+            android:layout_marginRight="@dimen/dms_10dp"
+            android:layout_marginBottom="@dimen/dms_10dp"
+            android:gravity="center"
+            android:text="@string/check_internet"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/dm_20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_thuLai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dms_15dp"
+            android:layout_marginBottom="@dimen/dms_30dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:paddingStart="@dimen/dms_50dp"
+            android:paddingTop="@dimen/dms_25dp"
+            android:paddingEnd="@dimen/dms_50dp"
+            android:paddingBottom="@dimen/dms_25dp"
+            android:text="@string/thu_lai"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm_18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

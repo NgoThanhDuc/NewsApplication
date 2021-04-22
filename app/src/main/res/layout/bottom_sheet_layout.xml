@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <View
+        android:layout_width="@dimen/dms_100dp"
+        android:layout_height="@dimen/dms_5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dms_10dp"
+        android:layout_marginBottom="@dimen/dms_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dms_5dp"
+        android:padding="@dimen/dms_8dp"
+        android:text="@string/chon"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dm_22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dms_1dp"
+        android:layout_marginBottom="@dimen/dms_10dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dms_10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/tb_danhDau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_selector"
+            android:checked="false"
+            android:drawableLeft="@drawable/bookmark_toggle_selector"
+            android:drawablePadding="20dp"
+            android:gravity="left|center"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textOff="@string/danh_dau_doc_sau"
+            android:textOn="@string/bo_danh_dau"
+            android:textSize="@dimen/dm_18sp" />
+
+        <ToggleButton
+            android:id="@+id/tb_shareFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_selector"
+            android:checked="false"
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textOff="@string/chia_se"
+            android:textOn="@string/chia_se"
+            android:textSize="@dimen/dm_18sp" />
+
+        <ToggleButton
+            android:id="@+id/tb_copyLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_selector"
+            android:checked="false"
+            android:drawableLeft="@drawable/ic_copy"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textOff="@string/copy_link"
+            android:textOn="@string/copy_link"
+            android:textSize="@dimen/dm_18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

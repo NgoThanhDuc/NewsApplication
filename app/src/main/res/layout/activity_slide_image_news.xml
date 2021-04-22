@@ -1,0 +1,237 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SlideImageNewsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/nd_chitiet"
+            app:titleTextColor="@android:color/white">
+
+            <ImageView
+                android:id="@+id/img_aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dms_15dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="right|center"
+                android:src="@drawable/ic_aa"
+                android:textColor="#000"
+                android:textSize="@dimen/dm_18sp" />
+
+            <ToggleButton
+                android:id="@+id/tb_danhDauReadNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:checked="false"
+                android:drawableRight="@drawable/bookmark_toggle_selector"
+                android:gravity="right|center"
+                android:padding="@dimen/dms_20dp"
+                android:textColor="@android:color/black"
+                android:textOff=" "
+                android:textOn=" "
+                android:textSize="@dimen/dm_18sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:visibility="visible">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="false"
+                android:fitsSystemWindows="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dms_10dp"
+                    android:layout_marginRight="@dimen/dms_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dms_10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_headerTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dms_10dp"
+                            android:layout_marginBottom="@dimen/dms_10dp"
+                            android:gravity="center|left"
+                            android:textSize="@dimen/dm_24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_dateTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dms_10dp"
+                            android:gravity="center|left"
+                            android:textSize="@dimen/dm_16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_subTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:textSize="@dimen/dm_20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPagerImageSlide"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingStart="@dimen/dms_20dp"
+                        android:paddingEnd="@dimen/dms_20dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="@dimen/dms_20dp"
+                            android:layout_marginBottom="@dimen/dms_15dp"
+                            android:background="#CCC6C6" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dms_15dp"
+                            android:gravity="center"
+                            android:text="@string/mot_so_tin_dang_chu_y"
+                            android:textSize="@dimen/dm_22sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="@dimen/dms_10dp"
+                            android:background="#CCC6C6" />
+
+                        <ListView
+                            android:id="@+id/linear_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dms_10dp"
+                            android:orientation="vertical"
+                            android:scrollbars="none" />
+
+                        <TextView
+                            android:id="@+id/txt_troVeTrangChu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dms_10dp"
+                            android:background="@drawable/custom_selector"
+                            android:gravity="center"
+                            android:text="@string/tro_ve_trang_chu"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/dm_18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/shimmer_view_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/read_news_place_holder_layout" />
+
+            </LinearLayout>
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_xemBaiVietGoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dms_10dp"
+            android:background="@drawable/custom_selector"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:text="@string/xem_bai_viet_goc"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dm_16sp" />
+
+        <TextView
+            android:id="@+id/txt_chiaSe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dms_10dp"
+            android:background="@drawable/custom_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_share"
+            android:drawablePadding="@dimen/dms_10dp"
+            android:gravity="center|right"
+            android:text="@string/chia_se"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dm_16sp" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

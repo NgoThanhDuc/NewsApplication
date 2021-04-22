@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.newsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activities.TienIchActivity" />
+        <activity
+            android:name=".activities.BaoNguoiLaoDongActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.BaoNgoiSaoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.BaoPhapLuatActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.LongformNewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.InfographicNewsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.BaoDauTuActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.SlideImageNewsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.VideoNewsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".activities.BaoBienPhongActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.TinDaDanhDauActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.XemBaiBaoGocActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.DieuKhoanSuDungActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.NewsHistoryActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.ReadNewsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.BaoTuoiTreActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Báo Thanh Đức</string>
+    <string name="chon_kenh_bao">CHỌN KÊNH BÁO</string>
+    <string name="ban_quyen">Cập nhập nhanh chóng \n tin nóng trong ngày </string>
+    <string name="bao_ngoi_sao">Báo Ngôi Sao</string>
+    <string name="bao_hai_tu">Báo 24 Giờ</string>
+    <string name="bao_tuoi_tre">Báo Tuổi Trẻ</string>
+    <string name="bao_vnexpress">Báo VnExpress</string>
+    <string name="bao_dau_tu">Báo Đầu Tư</string>
+    <string name="bao_phap_luat">Báo Pháp Luật</string>
+    <string name="bao_nguoi_lao_dong">Báo Người Lao Động</string>
+    <string name="bao_bien_phong">Báo Biên Phòng</string>
+    <string name="tin_tuc">TIN TỨC</string>
+    <string name="tin_da_doc">Tin đọc gần đây</string>
+    <string name="tin_da_luu">Tin đã đánh dấu</string>
+    <string name="giao_dien">GIAO DIỆN</string>
+    <string name="che_do_xem">Chế độ xem</string>
+    <string name="chon">Chọn</string>
+    <string name="danh_dau_doc_sau">Đánh dấu đọc sau</string>
+    <string name="error">Đang làm mới dữ liệu, vui lòng chọn chuyên mục khác.</string>
+    <string name="nd_chitiet">Nội dung chi tiết</string>
+    <string name="xoa_het">Xóa hết</string>
+    <string name="no_news_history">Bạn chưa đọc bài nào</string>
+    <string name="xem_bai_viet_goc"><u>Xem bài viết gốc</u></string>
+    <string name="chia_se"><u>Chia sẻ</u></string>
+    <string name="copy_link">Copy link</string>
+    <string name="mot_so_tin_dang_chu_y">MỘT SỐ TIN ĐÁNG CHÚ Ý</string>
+    <string name="tro_ve_trang_chu">Trở về trang chủ</string>
+    <string name="bao_thanh_duc">BÁO THANH ĐỨC</string>
+    <string name="lien_he">LIÊN HỆ</string>
+    <string name="ve_trang_truoc">Về trang trước</string>
+
+    <string name="dieu_khoan">Thỏa thuận sử dụng và bảo mật này (sau đây gọi là “Thỏa thuận”)
+        được lập ra bởi và giữa bạn (“bạn”) và <font color="blue"><b>Báo Thanh Đức</b></font> (hoặc “chúng tôi”) về việc sử dụng bất kỳ hay
+        tất cả các loại dịch vụ (“Dịch vụ”) của baothanhduc.com (<font color="blue"><b>Báo Thanh Đức</b></font>) của bạn. Bằng việc sử dụng Dịch vụ,
+        bạn đồng ý chịu ràng buộc bởi những điều khoản và điều kiện này. \n \nDịch vụ được thiết kế để giúp bạn tiếp cận thông tin tin tức được liên kết từ các trang không do <font color="blue"><b>Báo Thanh Đức</b></font> sở hữu hoặc
+        quản lý. Cụ thể, Dịch vụ cung cấp những mô tả ngắn gọn về các bài báo để giúp bạn xác định nội dung chính của bài báo mà bạn
+        quan tâm. Khi bạn lựa chọn một bài báo, bạn sẽ được kết nối tới website chứa bài báo đó (sau đây gọi là “website được kết nối”). \n \nThuật ngữ “bạn” để chỉ tất cả các cá nhân và/hoặc các tổ chức truy cập vào <font color="blue"><b>Báo Thanh Đức</b></font> vì bất kỳ lý do nào. \n \nI. Thỏa thuận sử dụng \nI.1. Quyền gắn với Dịch vụ. \n<font color="blue"><b>Báo Thanh Đức</b></font>
+        sở hữu và duy trì mọi quyền lợi sở hữu trí tuệ đối với Dịch vụ của mình nhưng <font color="blue"><b>Báo Thanh Đức</b></font> không tuyên bố là mình có quyền sở hữu trí tuệ đối với các bài báo tại
+        các website được kết nối. Các quyền sở hữu trí tuệ này thuộc về các website được kết nối. \n \n<font color="blue"><b>Báo Thanh Đức</b></font> cũng không chịu trách nhiệm về các thông tin, dịch vụ và nội dung của những website được kết nối. Bạn là người chịu hoàn toàn trách nhiệm trong việc sử dụng, khai thác, cung cấp thông tin cá nhân, v.v... cho các website này.\n \nI.2. Sử dụng và chấm dứt
+        sử dụng Dịch vụ. \nBạn chỉ có thể sử dụng nội dung của Dịch vụ cho mục đích cá nhân của riêng bạn (cụ thể là không dùng cho mục đích thương mại) và
+        không được sao chép, thay đổi, sửa đổi, tạo ra các tác phẩm phái sinh hoặc thể hiện một cách công khai bất kỳ nội dung nào của
+        Dịch vụ. Chẳng hạn, bạn không được sử dụng Dịch vụ để bán một sản phẩm hay dịch vụ; hay sử dụng Dịch vụ để tăng số lượt truy cập
+        tới trang web của bạn vì mục đích thương mại; hay sử dụng các kết quả từ Dịch vụ rồi định dạng lại và thể hiện công khai chúng,
+        hay sử dụng các công cụ hoặc tài liệu khác để theo dõi hay sao chép bất kỳ nội dung nào từ Dịch vụ. Nếu bạn không chắc liệu dự định
+        sử dụng Dịch vụ của bạn có được phép hay không, xin vui lòng liên hệ với chúng tôi. \n \n<font color="blue"><b>Báo Thanh Đức</b></font> sẽ không chịu trách nhiệm đối với việc gián đoạn, ngừng hoạt động, mất hoặc sai lệch dữ liệu từ những hành động tấn
+        công của cá nhân hay tổ chức nào khác, cũng như về các sự cố kỹ thuật trong khi cung cấp Dịch vụ. <font color="blue"><b>Báo Thanh Đức</b></font> cũng không chịu
+        trách nhiệm về các tổn thất phát sinh từ việc sử dụng Dịch vụ hoặc từ sự tương tác giữa bạn với những người dùng khác. \n \n<font color="blue"><b>Báo Thanh Đức</b></font> có quyền đơn phương đình chỉ hoặc chấm dứt Dịch vụ hoặc sự truy cập của bạn tới Dịch vụ. \n \nII. Thỏa thuận bảo mật \nII.1. Những thông tin mà chúng tôi thu thập \nMỗi khi bạn truy cập Dịch vụ, hệ thống của <font color="blue"><b>Báo Thanh Đức</b></font> sẽ sử dụng cookies và các kỹ thuật khác để lưu lại những hoạt động của
+        bạn trên <font color="blue"><b>Báo Thanh Đức</b></font>. Server của <font color="blue"><b>Báo Thanh Đức</b></font> cũng sẽ tự động ghi lại thông tin khi bạn truy cập trang này và sử dụng các Dịch vụ
+        bao gồm nhưng không giới hạn URL, địa chỉ IP, loại trình duyệt, ngôn ngữ, ngày giờ truy cập hoặc sử dụng Dịch vụ. \n \nII.2. Sử dụng thông tin Chúng tôi sử dụng thông tin cá nhân của bạn để nâng cao chất lượng của Dịch vụ, để gửi tới bạn các thông
+        báo về dịch vụ mới của <font color="blue"><b>Báo Thanh Đức</b></font> hoặc dịch vụ của bên thứ ba mà chúng tôi tin rằng sẽ hữu ích với bạn. \n \nChúng tôi có thể sử dụng thông tin cá nhân của bạn trong việc điều tra, nghiên cứu hoặc phân tích để vận hành và nâng cấp các kỹ thuật của <font color="blue"><b>Báo Thanh Đức</b></font> và Dịch vụ. \n \nChúng tôi có thể sử dụng thông tin cá nhân của bạn để xác định xem liệu bạn có thể
+        quan tâm đến các sản phẩm hay dịch vụ của bên thứ ba nào không. \n \nVề nguyên tắc, chúng tôi không cung cấp cho bên thứ ba thông tin cá nhân của bạn trừ các trường hợp sau: \n \nBạn đồng ý để chúng tôi cung cấp thông tin cá nhân của bạn cho bên thứ ba; và/hoặc Chúng tôi cho rằng việc cung cấp thông tin cá
+        nhân của bạn cho bên thứ ba là cần thiết, ví dụ nhằm tuân theo các yêu cầu pháp lý, ngăn chặn tội phạm hoặc bảo vệ an ninh quốc
+        gia, hay bảo vệ an toàn cá nhân của những người sử dụng hoặc công chúng, v.v...; và/hoặc Bên thứ ba là đối tượng mua lại toàn bộ
+        hay phần lớn pháp nhân sở hữu <font color="blue"><b>Báo Thanh Đức</b></font> và Dịch vụ; và/hoặc Thông tin cá nhân là thông tin vô danh về khách ghé thăm <font color="blue"><b>Báo Thanh Đức</b></font>.
+        Chúng tôi có thể chia sẻ loại thông tin này cho bên thứ ba để họ có thể tìm hiểu về các loại khách tới thăm <font color="blue"><b>Báo Thanh Đức</b></font> và cách họ sử dụng Dịch vụ. \n \nII.3. Bảo mật Mật khẩu truy cập tài khoản của tất cả các thành viên của <font color="blue"><b>Báo Thanh Đức</b></font> đều được <font color="blue"><b>Báo Thanh Đức</b></font> bảo vệ. Tuy nhiên, an
+        ninh mạng không an toàn tuyệt đối, vì thế <font color="blue"><b>Báo Thanh Đức</b></font> không chịu trách nhiệm về những thiệt hại có thể xảy ra. \n \n
+
+    </string>
+
+    <string name="menu">menu</string>
+    <string name="txt_duoi_toggel">Copyright © Báo Thanh Đức 2020</string>
+    <string name="title_dieukhoan">Điều khoản sử dụng</string>
+    <string name="thong_tin_lien_he">Thông tin liên hệ</string>
+    <string name="ngothanhduc">Ngô Thanh Đức</string>
+    <string name="sdt">0333254167</string>
+    <string name="diachi">TP Hồ Chí Minh, Việt Nam</string>
+    <string name="email">ngothanhduc1662000@gmail.com</string>
+    <string name="facebook">https://www.facebook.com/</string>
+    <string name="bo_danh_dau">Bỏ đánh dấu</string>
+    <string name="tin_da_danh_dau">Tin đã đánh dấu</string>
+    <string name="no_tin_danh_dau">Bạn chưa đánh dấu bài nào</string>
+    <string name="gui_mail_gop_y">Gửi mail góp ý</string>
+    <string name="fb_bao_thanh_duc">Facbook Báo Thanh Đức</string>
+    <string name="danh_gia_app">Đánh giá ứng dụng</string>
+    <string name="tien_ich">Tiện ích</string>
+    <string name="A_a"> <big>A</big><small>A</small> </string>
+    <string name="mac_dinh"><u>Mặc định</u></string>
+    <string name="a_tru">A-</string>
+    <string name="a_cong">A+</string>
+    <string name="che_do_doc_dem">Chế độ đọc</string>
+    <string name="loading">Loading...</string>
+    <string name="thu_lai">Thử lại</string>
+    <string name="check_internet">không tải được dữ liệu.Vui lòng kiểm tra kết nội mạng và thử lại.</string>
+    <string name="anh_dang_chu_y">Một số ảnh liên quan (nếu có): </string>
+
+
+</resources>

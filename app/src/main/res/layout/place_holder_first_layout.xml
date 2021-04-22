@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_anhChiTiets"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dms_250dp"
+        android:background="@color/placeholder"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/linearImageSave"
+        android:layout_width="@dimen/dms_60dp"
+        android:layout_height="@dimen/dms_60dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dms_5dp"
+        android:layout_marginRight="@dimen/dms_10dp"
+        android:background="@color/placeholder2"
+        android:gravity="center"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/dms_10dp"
+        android:layout_marginRight="@dimen/dms_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_8dp"
+            android:background="@color/placeholder2"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm_22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_ngayDang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dms_10dp"
+            android:background="@color/placeholder2"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm_16sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

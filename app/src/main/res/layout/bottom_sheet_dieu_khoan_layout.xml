@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <View
+        android:layout_width="@dimen/dms_100dp"
+        android:layout_height="@dimen/dms_5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dms_10dp"
+        android:layout_marginBottom="@dimen/dms_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dms_5dp"
+        android:padding="@dimen/dms_8dp"
+        android:text="@string/thong_tin_lien_he"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dm_22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dms_1dp"
+        android:layout_marginBottom="@dimen/dms_15dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dms_10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dms_30dp"
+            android:layout_height="@dimen/dms_30dp"
+            android:layout_marginRight="@dimen/dms_20dp"
+            android:background="@drawable/user"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_selector"
+            android:clickable="true"
+            android:padding="@dimen/dms_5dp"
+            android:text="@string/ngothanhduc"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dms_10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dms_30dp"
+            android:layout_height="@dimen/dms_30dp"
+            android:layout_marginRight="@dimen/dms_20dp"
+            android:background="@drawable/smartphones"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_sdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_5dp"
+            android:text="@string/sdt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dms_10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dms_30dp"
+            android:layout_height="@dimen/dms_30dp"
+            android:layout_marginRight="@dimen/dms_20dp"
+            android:background="@drawable/maps"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_ggmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_5dp"
+            android:text="@string/diachi"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dms_10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dms_30dp"
+            android:layout_height="@dimen/dms_30dp"
+            android:layout_marginRight="@dimen/dms_20dp"
+            android:background="@drawable/gmail"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_5dp"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dms_10dp"
+        android:layout_marginBottom="@dimen/dms_5dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dms_30dp"
+            android:layout_height="@dimen/dms_30dp"
+            android:layout_marginRight="@dimen/dms_20dp"
+            android:background="@drawable/facebook_lienhe"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_selector"
+            android:padding="@dimen/dms_5dp"
+            android:text="@string/facebook"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dm_18sp" />
+    </LinearLayout>
+
+</LinearLayout>
