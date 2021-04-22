@@ -22,7 +22,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
-public class XMLDOMParserUntil {
+public class XMLDOMParserUtil {
 
     public Document getDocument(String xml, ListView listView, TextView textView, ShimmerLayout shimmer_view_contain, FrameLayout frameLayout_contain) {
         Document document = null;

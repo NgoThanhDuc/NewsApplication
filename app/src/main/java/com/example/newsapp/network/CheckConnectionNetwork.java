@@ -14,7 +14,7 @@ import com.example.newsapp.R;
 
 import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
-public class CheckConnectionUntil {
+public class CheckConnectionNetwork {
 
     public static boolean haveNetworkConnection(Context context) {
         boolean haveConnectedWifi = false;

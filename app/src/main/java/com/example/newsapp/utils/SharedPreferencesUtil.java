@@ -12,14 +12,14 @@ import com.example.newsapp.activities.BaoPhapLuatActivity;
 import com.example.newsapp.activities.BaoTuoiTreActivity;
 import com.example.newsapp.activities.MainActivity;
 
-public class SharedPreferencesUntil {
+public class SharedPreferencesUtil {
 
     // newsName
     private SharedPreferences sharedPreferencesNewsName;
     private static final String MY_PREFERENCES_NEWSNAME = "newsNamePrefs";
     private static final String KEY_NEWSNAME = "news_name";
 
-    public SharedPreferencesUntil(Context context) {
+    public SharedPreferencesUtil(Context context) {
         sharedPreferencesNewsName = context.getSharedPreferences(MY_PREFERENCES_NEWSNAME, Context.MODE_PRIVATE);
     }
 

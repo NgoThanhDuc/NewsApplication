@@ -30,10 +30,10 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.newsapp.R;
 import com.example.newsapp.adapters.ChiTietTinTucTwoViewTypeAdapter;
 import com.example.newsapp.models.ChiTietTinTuc;
-import com.example.newsapp.network.CheckConnectionUntil;
-import com.example.newsapp.utils.SaveLoadFileUntil;
-import com.example.newsapp.utils.ShowHideUntil;
-import com.example.newsapp.utils.XMLDOMParserUntil;
+import com.example.newsapp.network.CheckConnectionNetwork;
+import com.example.newsapp.utils.SaveLoadFileUtil;
+import com.example.newsapp.utils.ShowHideUtil;
+import com.example.newsapp.utils.XMLDOMParserUtil;
 import com.example.newsapp.variables.LinkBaoTuoiTre;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -87,20 +87,20 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
     private ChiTietTinTucTwoViewTypeAdapter chiTietTinTucAdapter;
     private LinkBaoTuoiTre linkBaoTuoiTre;
 
-    private SaveLoadFileUntil saveLoadFileUntil;
+    private SaveLoadFileUtil saveLoadFileUntil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_chung);
 
-        if (CheckConnectionUntil.haveNetworkConnection(this)) {
+        if (CheckConnectionNetwork.haveNetworkConnection(this)) {
             init();
             actionBar();
             initDataApp();
             events();
         } else {
-            CheckConnectionUntil.showDialogNoUpdateData(BaoTuoiTreActivity.this);
+            CheckConnectionNetwork.showDialogNoUpdateData(BaoTuoiTreActivity.this);
         }
 
     }
@@ -136,7 +136,7 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
 
         arrChiTietTinTuc = new ArrayList<>();
         linkBaoTuoiTre = new LinkBaoTuoiTre();
-        saveLoadFileUntil = new SaveLoadFileUntil();
+        saveLoadFileUntil = new SaveLoadFileUtil();
 
     }
 
@@ -185,7 +185,7 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
-                if (CheckConnectionUntil.haveNetworkConnection(BaoTuoiTreActivity.this)) {
+                if (CheckConnectionNetwork.haveNetworkConnection(BaoTuoiTreActivity.this)) {
                     switch (tab.getPosition()) {
                         case 0:
                             saveLoadFileUntil.saveFileTabSelect(getApplicationContext(), tab.getText().toString());
@@ -283,7 +283,7 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
                             break;
                     }
                 } else {
-                    CheckConnectionUntil.showDialogNoUpdateData(BaoTuoiTreActivity.this);
+                    CheckConnectionNetwork.showDialogNoUpdateData(BaoTuoiTreActivity.this);
                 }
 
             }
@@ -387,7 +387,7 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
         txt_danhGiaUngDung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShowHideUntil.showDialogRating(BaoTuoiTreActivity.this);
+                ShowHideUtil.showDialogRating(BaoTuoiTreActivity.this);
             }
         });
 
@@ -475,7 +475,7 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
-            ShowHideUntil.showShimmerLayout(frameLayout_contain, shimmer_view_contain);
+            ShowHideUtil.showShimmerLayout(frameLayout_contain, shimmer_view_contain);
         }
 
         @Override
@@ -489,7 +489,7 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
 
             try {
 
-                XMLDOMParserUntil parser = new XMLDOMParserUntil();
+                XMLDOMParserUtil parser = new XMLDOMParserUtil();
                 Document document = parser.getDocument(s, lst_bao, txt_error, shimmer_view_contain, frameLayout_contain);
 
                 // check xem cso ther description trên đầu hay không
@@ -570,12 +570,12 @@ public class BaoTuoiTreActivity extends AppCompatActivity {
                     return;
                 }
 
-                ShowHideUntil.hideShimmerLayout(frameLayout_contain, shimmer_view_contain);
+                ShowHideUtil.hideShimmerLayout(frameLayout_contain, shimmer_view_contain);
 
             } catch (NullPointerException e) {
                 lst_bao.setVisibility(View.GONE);
                 txt_error.setVisibility(View.VISIBLE);
-                ShowHideUntil.hideShimmerLayout(frameLayout_contain, shimmer_view_contain);
+                ShowHideUtil.hideShimmerLayout(frameLayout_contain, shimmer_view_contain);
             }
 
         }

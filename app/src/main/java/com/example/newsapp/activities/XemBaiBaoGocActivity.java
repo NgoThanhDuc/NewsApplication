@@ -23,7 +23,7 @@ import androidx.core.content.ContextCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.newsapp.R;
-import com.example.newsapp.network.CheckConnectionUntil;
+import com.example.newsapp.network.CheckConnectionNetwork;
 
 public class XemBaiBaoGocActivity extends AppCompatActivity {
 
@@ -38,12 +38,12 @@ public class XemBaiBaoGocActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_xem_bai_bao_goc);
 
-        if (CheckConnectionUntil.haveNetworkConnection(this)) {
+        if (CheckConnectionNetwork.haveNetworkConnection(this)) {
             init();
             actionBar();
             events();
         } else {
-            CheckConnectionUntil.showDialogNoUpdateData(XemBaiBaoGocActivity.this);
+            CheckConnectionNetwork.showDialogNoUpdateData(XemBaiBaoGocActivity.this);
         }
 
     }

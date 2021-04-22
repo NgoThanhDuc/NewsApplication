@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.example.newsapp.R;
 import com.example.newsapp.models.ChiTietTinTuc;
-import com.example.newsapp.utils.SaveLoadFileUntil;
+import com.example.newsapp.utils.SaveLoadFileUtil;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -22,12 +22,12 @@ public class ChiTietTinTucDanhDauAdapter extends BaseAdapter {
 
     private Context context;
     private ArrayList<ChiTietTinTuc> arrChiTietTinTuc;
-    private SaveLoadFileUntil saveLoadFileUntil;
+    private SaveLoadFileUtil saveLoadFileUntil;
 
     public ChiTietTinTucDanhDauAdapter(Context context, ArrayList<ChiTietTinTuc> arrChiTietTinTuc) {
         this.context = context;
         this.arrChiTietTinTuc = arrChiTietTinTuc;
-        saveLoadFileUntil = new SaveLoadFileUntil();
+        saveLoadFileUntil = new SaveLoadFileUtil();
     }
 
     public void addListItemAdapter(ArrayList<ChiTietTinTuc> itemPlus) {

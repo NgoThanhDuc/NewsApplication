@@ -2,9 +2,9 @@ package com.example.newsapp.utils;
 
 import java.util.Arrays;
 
-public class VNCharacterUntil {
+public class VNCharacterUtil {
 
-    public VNCharacterUntil() {
+    public VNCharacterUtil() {
     }
 
     private final char[] SOURCE_CHARACTERS = {'À', 'Á', 'Â', 'Ã', 'È', 'É',

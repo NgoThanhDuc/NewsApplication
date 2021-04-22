@@ -20,8 +20,8 @@ import com.example.newsapp.R;
 import com.example.newsapp.interfaces.RecyclerViewClickInterface;
 import com.example.newsapp.adapters.ChonDauBaoAdapter;
 import com.example.newsapp.models.ChonKenhBao;
-import com.example.newsapp.utils.SharedPreferencesUntil;
-import com.example.newsapp.utils.VNCharacterUntil;
+import com.example.newsapp.utils.SharedPreferencesUtil;
+import com.example.newsapp.utils.VNCharacterUtil;
 
 import java.util.ArrayList;
 
@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     private static final String MY_PREFERENCES_DAYNIGHT = "nightModePrefs";
     private static final String KEY_ISNIGHTMODE = "isNightMode";
 
-    private SharedPreferencesUntil sharedPreferencesUntil;
+    private SharedPreferencesUtil sharedPreferencesUntil;
 
-    private VNCharacterUntil vnCharacterUntil;
+    private VNCharacterUtil vnCharacterUtil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
 
         arrayListKenhBao = new ArrayList<>();
         gridLayoutManager = new GridLayoutManager(getApplicationContext(), 3, LinearLayoutManager.VERTICAL, false);
-        sharedPreferencesUntil = new SharedPreferencesUntil(MainActivity.this);
-        vnCharacterUntil = new VNCharacterUntil();
+        sharedPreferencesUntil = new SharedPreferencesUtil(MainActivity.this);
+        vnCharacterUtil = new VNCharacterUtil();
     }
 
     private void initDataApp() {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     private void filter(String text) {
         ArrayList<ChonKenhBao> filterlist = new ArrayList<>();
         for (ChonKenhBao item : arrayListKenhBao) {
-            if (vnCharacterUntil.removeAccent(item.getNameNews().toLowerCase()).contains(vnCharacterUntil.removeAccent(text.toLowerCase()))) {
+            if (vnCharacterUtil.removeAccent(item.getNameNews().toLowerCase()).contains(vnCharacterUtil.removeAccent(text.toLowerCase()))) {
                 filterlist.add(item);
             }
         }

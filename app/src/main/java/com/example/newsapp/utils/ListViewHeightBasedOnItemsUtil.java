@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-public class ListViewHeightBasedOnItemsUntil {
+public class ListViewHeightBasedOnItemsUtil {
 
     public static boolean setListViewHeightBasedOnItems(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();

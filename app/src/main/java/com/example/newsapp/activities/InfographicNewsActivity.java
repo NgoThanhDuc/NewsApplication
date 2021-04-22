@@ -35,9 +35,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.newsapp.R;
 import com.example.newsapp.adapters.ChiTietTinTucNormalAdapter;
 import com.example.newsapp.models.ChiTietTinTuc;
-import com.example.newsapp.network.CheckConnectionUntil;
-import com.example.newsapp.utils.SaveLoadFileUntil;
-import com.example.newsapp.utils.XMLDOMParserUntil;
+import com.example.newsapp.network.CheckConnectionNetwork;
+import com.example.newsapp.utils.SaveLoadFileUtil;
+import com.example.newsapp.utils.XMLDOMParserUtil;
 import com.example.newsapp.variables.LinkBaoDauTu;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.mahfa.dnswitch.DayNightSwitch;
@@ -68,7 +68,7 @@ import java.util.regex.Pattern;
 
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
-import static com.example.newsapp.utils.ListViewHeightBasedOnItemsUntil.setListViewHeightBasedOnItems;
+import static com.example.newsapp.utils.ListViewHeightBasedOnItemsUtil.setListViewHeightBasedOnItems;
 
 public class InfographicNewsActivity extends AppCompatActivity {
 
@@ -113,7 +113,7 @@ public class InfographicNewsActivity extends AppCompatActivity {
     int iNew = 0;
 
     private BottomSheetDialog bottomSheetDialog;
-    private SaveLoadFileUntil saveLoadFileUntil;
+    private SaveLoadFileUtil saveLoadFileUntil;
 
     //show dialog textSize
     private Dialog dialog_box;
@@ -130,13 +130,13 @@ public class InfographicNewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_infographic_news);
 
 
-        if (CheckConnectionUntil.haveNetworkConnection(this)) {
+        if (CheckConnectionNetwork.haveNetworkConnection(this)) {
             init();
             initDataApp();
             actionBar();
             event();
         } else {
-            CheckConnectionUntil.showDialogNoUpdateData(InfographicNewsActivity.this);
+            CheckConnectionNetwork.showDialogNoUpdateData(InfographicNewsActivity.this);
         }
     }
 
@@ -158,7 +158,7 @@ public class InfographicNewsActivity extends AppCompatActivity {
 
         linkBaoDauTu = new LinkBaoDauTu();
         arrChiTietTinTuc = new ArrayList<>();
-        saveLoadFileUntil = new SaveLoadFileUntil();
+        saveLoadFileUntil = new SaveLoadFileUtil();
 
         // textSizeDialog
         dialog_box = new Dialog(InfographicNewsActivity.this);
@@ -807,7 +807,7 @@ public class InfographicNewsActivity extends AppCompatActivity {
 
             try {
 
-                XMLDOMParserUntil parser = new XMLDOMParserUntil();
+                XMLDOMParserUtil parser = new XMLDOMParserUtil();
                 org.w3c.dom.Document document = parser.getDocument(s);
 
                 // check xem cso ther description trên đầu hay không

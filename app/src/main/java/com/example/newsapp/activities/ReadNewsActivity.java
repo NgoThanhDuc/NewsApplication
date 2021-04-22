@@ -42,9 +42,9 @@ import com.example.newsapp.adapters.ChiTietTinTucNormalAdapter;
 import com.example.newsapp.adapters.SlideImageHolderAdapter;
 import com.example.newsapp.models.ChiTietTinTuc;
 import com.example.newsapp.models.ImagePlaceHolder;
-import com.example.newsapp.network.CheckConnectionUntil;
-import com.example.newsapp.utils.SaveLoadFileUntil;
-import com.example.newsapp.utils.XMLDOMParserUntil;
+import com.example.newsapp.network.CheckConnectionNetwork;
+import com.example.newsapp.utils.SaveLoadFileUtil;
+import com.example.newsapp.utils.XMLDOMParserUtil;
 import com.example.newsapp.variables.LinkBaoBienPhong;
 import com.example.newsapp.variables.LinkBaoDauTu;
 import com.example.newsapp.variables.LinkBaoNgoiSao;
@@ -79,7 +79,7 @@ import java.util.regex.Pattern;
 
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
-import static com.example.newsapp.utils.ListViewHeightBasedOnItemsUntil.setListViewHeightBasedOnItems;
+import static com.example.newsapp.utils.ListViewHeightBasedOnItemsUtil.setListViewHeightBasedOnItems;
 
 public class ReadNewsActivity extends AppCompatActivity {
 
@@ -142,7 +142,7 @@ public class ReadNewsActivity extends AppCompatActivity {
     int iNew = 0;
 
     private BottomSheetDialog bottomSheetDialog;
-    private SaveLoadFileUntil saveLoadFileUntil;
+    private SaveLoadFileUtil saveLoadFileUntil;
 
     //show dialog textSize
     private Dialog dialog_box;
@@ -157,13 +157,13 @@ public class ReadNewsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read_news);
 
-        if (CheckConnectionUntil.haveNetworkConnection(this)) {
+        if (CheckConnectionNetwork.haveNetworkConnection(this)) {
             init();
             actionBar();
             initDataApp();
             events();
         } else {
-            CheckConnectionUntil.showDialogNoUpdateData(ReadNewsActivity.this);
+            CheckConnectionNetwork.showDialogNoUpdateData(ReadNewsActivity.this);
         }
     }
 
@@ -197,7 +197,7 @@ public class ReadNewsActivity extends AppCompatActivity {
 
         arrChiTietTinTuc = new ArrayList<>();
         arrNoiDungBaoHtml = new ArrayList<>();
-        saveLoadFileUntil = new SaveLoadFileUntil();
+        saveLoadFileUntil = new SaveLoadFileUtil();
 
         // init textSizeDialog
         dialog_box = new Dialog(ReadNewsActivity.this);
@@ -1903,7 +1903,7 @@ public class ReadNewsActivity extends AppCompatActivity {
 
             try {
 
-                XMLDOMParserUntil parser = new XMLDOMParserUntil();
+                XMLDOMParserUtil parser = new XMLDOMParserUtil();
                 org.w3c.dom.Document document = parser.getDocument(s);
 
                 // check xem cso ther description trên đầu hay không

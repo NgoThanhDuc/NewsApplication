@@ -18,7 +18,7 @@ import android.widget.ToggleButton;
 
 import com.example.newsapp.R;
 import com.example.newsapp.models.ChiTietTinTuc;
-import com.example.newsapp.utils.SaveLoadFileUntil;
+import com.example.newsapp.utils.SaveLoadFileUtil;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.squareup.picasso.Picasso;
 
@@ -30,13 +30,13 @@ public class ChiTietTinTucNormalAdapter extends BaseAdapter {
     private ArrayList<ChiTietTinTuc> arrChiTietTinTuc;
     private BottomSheetDialog bottomSheetDialog;
     private ToggleButton tb_danhDau, tb_shareFacebook, tb_copyLink;
-    private SaveLoadFileUntil saveLoadFileUntil;
+    private SaveLoadFileUtil saveLoadFileUntil;
 
     public ChiTietTinTucNormalAdapter(Context context, ArrayList<ChiTietTinTuc> arrChiTietTinTuc) {
         this.context = context;
         this.arrChiTietTinTuc = arrChiTietTinTuc;
         bottomSheetDialog = new BottomSheetDialog(context, R.style.BottomSheetTheme);
-        saveLoadFileUntil = new SaveLoadFileUntil();
+        saveLoadFileUntil = new SaveLoadFileUtil();
     }
 
     @Override

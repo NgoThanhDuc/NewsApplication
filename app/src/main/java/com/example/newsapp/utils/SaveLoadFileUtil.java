@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
-public class SaveLoadFileUntil {
+public class SaveLoadFileUtil {
 
     public void saveFileTabSelect(Context context, String tabSelect) {
         File file = new File(context.getFilesDir(), "tabSelected.txt");

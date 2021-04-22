@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
-public class ShowHideUntil {
+public class ShowHideUtil {
 
     public static void showDialogRating(FragmentActivity activity) {
         new AppRatingDialog.Builder()

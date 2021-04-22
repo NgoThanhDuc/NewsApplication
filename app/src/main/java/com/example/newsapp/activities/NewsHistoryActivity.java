@@ -29,7 +29,7 @@ import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.example.newsapp.R;
 import com.example.newsapp.adapters.ChiTietTinTucNormalAdapter;
 import com.example.newsapp.models.ChiTietTinTuc;
-import com.example.newsapp.utils.SaveLoadFileUntil;
+import com.example.newsapp.utils.SaveLoadFileUtil;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -56,7 +56,7 @@ public class NewsHistoryActivity extends AppCompatActivity {
     private ChiTietTinTucNormalAdapter chiTietTinTucNormalAdapter;
     private AlertDialog.Builder builder;
 
-    private SaveLoadFileUntil saveLoadFileUntil;
+    private SaveLoadFileUtil saveLoadFileUntil;
 
     private SharedPreferences sharedPreferencesDayNight;
     private static final String MY_PREFERENCES_DAYNIGHT = "nightModePrefs";
@@ -84,7 +84,7 @@ public class NewsHistoryActivity extends AppCompatActivity {
         frameLayout_contain = findViewById(R.id.frameLayout_contain);
 
         builder = new AlertDialog.Builder(NewsHistoryActivity.this);
-        saveLoadFileUntil = new SaveLoadFileUntil();
+        saveLoadFileUntil = new SaveLoadFileUtil();
 
         sharedPreferencesDayNight = getSharedPreferences(MY_PREFERENCES_DAYNIGHT, Context.MODE_PRIVATE);
 

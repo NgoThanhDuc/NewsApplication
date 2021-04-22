@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.newsapp.R;
-import com.example.newsapp.utils.SharedPreferencesUntil;
+import com.example.newsapp.utils.SharedPreferencesUtil;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     private ImageView imageView;
     private TextView textView, textView2;
 
-    private SharedPreferencesUntil sharedPreferencesUntil;
+    private SharedPreferencesUtil sharedPreferencesUntil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.textView);
         textView2 = findViewById(R.id.textView2);
-        sharedPreferencesUntil = new SharedPreferencesUntil(SplashScreenActivity.this);
+        sharedPreferencesUntil = new SharedPreferencesUtil(SplashScreenActivity.this);
 
         top_splash_screen = AnimationUtils.loadAnimation(this, R.anim.top_splash_screen);
         bottom_splash_screen = AnimationUtils.loadAnimation(this, R.anim.bottom_splash_screen);
