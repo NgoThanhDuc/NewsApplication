@@ -185,7 +185,7 @@ public class TinDaDanhDauActivity extends AppCompatActivity {
                 intent.putExtra("tab_selected", saveLoadFileUntil.loadFileTabSelect(getApplicationContext()));
 
                 saveLoadFileUntil.saveFileNews(getApplicationContext(),
-                        "historyNews.txt",
+                        "bookmarkNews.txt",
                         arrNewsDanhDau.get(position).getNewsName(),
                         arrNewsDanhDau.get(position).getTitle(),
                         arrNewsDanhDau.get(position).getLink(),
@@ -212,12 +212,12 @@ public class TinDaDanhDauActivity extends AppCompatActivity {
 
         try {
 
-            File file = new File(getFilesDir(), "historyNews.txt");
+            File file = new File(getFilesDir(), "bookmarkNews.txt");
             if (file.exists()) {
 
                 file.delete(); // xóa dữ liệu trong file
 
-                FileOutputStream fs_out = openFileOutput("historyNews.txt", Context.MODE_APPEND);
+                FileOutputStream fs_out = openFileOutput("bookmarkNews.txt", Context.MODE_APPEND);
                 OutputStreamWriter os = new OutputStreamWriter(fs_out);
 
                 for (int i = 0; i < arrNewsDanhDau.size(); i++) { // ghi dữ liệu mới gồm 5 item vào file
@@ -231,7 +231,7 @@ public class TinDaDanhDauActivity extends AppCompatActivity {
                 os.close();
 
                 // xóa từng cái nhưng hết
-                FileInputStream fs_in = openFileInput("historyNews.txt");
+                FileInputStream fs_in = openFileInput("bookmarkNews.txt");
                 InputStreamReader is = new InputStreamReader(fs_in);
                 BufferedReader br = new BufferedReader(is);
                 String lineRead = br.readLine();
